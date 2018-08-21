@@ -1,0 +1,165 @@
+@import '../../styles/variables';
+
+.datatable {
+  clear: both;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  max-width: none;
+  border-collapse: collapse;
+  border: 1px solid $borderColor;
+  border-spacing: 0;
+  font-size: 0.8rem;
+  min-width: 100%;
+  td,
+  th {
+    border: 1px solid $borderColor;
+    padding: 0.5rem;
+    line-height: 1.25rem;
+    display: table-cell;
+    white-space: nowrap;
+  }
+  tr {
+    height: 20px;
+  }
+
+  th {
+    font-weight: bold;
+    color: inherit;
+    background-color: $coolColor3;
+  }
+
+  tr {
+    &:hover {
+      td {
+        background-color: $coolColor2;
+      }
+    }
+  }
+}
+
+.scrollHeader{
+  overflow-y: scroll;
+  display: inline-block;
+  min-width: 100%;
+}
+.scrollBody {
+  overflow-y: scroll;
+  display: inline-block;
+  margin-top: -6px;
+  min-width: 100%;
+}
+
+
+.table-ops {
+  position: relative;
+  height: 1.25rem;
+  & > a {
+    border: 0;
+    padding: 0;
+    margin-right: 8px;
+  }
+}
+
+.hidden-ops {
+  display: none;
+  position: absolute;
+  top: -9px;
+  left: calc(-1rem);
+  padding: 0.5rem 1rem;
+  background: white;
+  border: $borderColor 1px solid;
+  box-shadow: $shadow3;
+  transform: translateX(-100%);
+  & > a {
+    border: 0;
+    padding: 0;
+    margin-right: 8px;
+  }
+}
+
+.show-ops {
+  composes: hidden-ops;
+  display: block;
+}
+
+.hidden-ops-right {
+  display: none;
+  position: absolute;
+  top: -9px;
+  left: calc(17rem);
+  padding: 0.5rem 1rem;
+  background: white;
+  border: $borderColor 1px solid;
+  box-shadow: $shadow3;
+  transform: translateX(-100%);
+  & > a {
+    border: 0;
+    padding: 0;
+    margin-right: 8px;
+  }
+}
+
+.show-ops-right {
+  composes: hidden-ops-right;
+  display: block;
+}
+
+.table-input {
+  width: 90%;
+  text-align: center;
+  height: 30px !important;
+  padding: 0.3rem;
+}
+
+.datatable-input {
+  composes: datatable;
+  td,
+  th {
+    border: 1px solid $borderColor;
+    padding: 0.3rem;
+    line-height: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    height: 30px;
+  }
+}
+
+.datatable__custom-row {
+  overflow: auto;
+  table {
+    width: auto !important;
+    tr {
+      td {
+        text-align: right;
+        &:first-child {
+          text-align: center;
+        }
+      }
+      th {
+        text-align: right;
+        &:first-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.month-switch {
+  span {
+    margin-right: 5px;
+  }
+  i {
+    width: 5px;
+  }
+}
+
+.subtable-switch {
+  display: inline-block;
+  width: 100%;
+  i {
+    position: relative;
+    left: 10px;
+  }
+}

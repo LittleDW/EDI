@@ -1,0 +1,492 @@
+{
+  "local": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "clientVariable": {
+      "WS": "ws://beehive.roprouter.ruixuesoft.com:1199/edi-message-broker-client",
+      "exportMaxRows": 35000
+    },
+    "rop": {
+      "appKey": "86C1CCFA-E79F-4815-89F0-A788558AEAA6",
+      "appSecret": "EB797716-8783-4E5F-8E1F-E6F1862C2861",
+      "host": "https://testapi.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "http://dl-rc-optd-cer-mysql-v-test-1.host.dataengine.com:8080"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "59.110.5.11",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crtsession",
+        "connectionLimit": 40
+      },
+      "read": {
+        "host": "59.110.5.11",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crt",
+        "connectionLimit": 40
+      },
+      "write": {
+        "host": "59.110.17.154",
+        "port": 6498,
+        "user": "rop",
+        "password": "Dr97IJwv#o0nw",
+        "database": "crt",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "development": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "domain": "beehive.roprouter.ruixuesoft.com",
+    "clientVariable": {
+      "WS": "ws://beehive.roprouter.ruixuesoft.com:1199/edi-message-broker-client",
+      "exportMaxRows": 35000,
+      "serviceHost": "http://service.beehive.roprouter.ruixuesoft.com:1199"
+    },
+    "rop": {
+      "appKey": "86C1CCFA-E79F-4815-89F0-A788558AEAA6",
+      "appSecret": "EB797716-8783-4E5F-8E1F-E6F1862C2861",
+      "host": "https://testapi.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "http://dl-rc-optd-cer-mysql-v-test-1.host.dataengine.com:8080"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "59.110.5.11",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crtsession",
+        "connectionLimit": 40
+      },
+      "read": {
+        "host": "59.110.5.11",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crt",
+        "connectionLimit": 40
+      },
+      "write": {
+        "host": "59.110.17.154",
+        "port": 6498,
+        "user": "rop",
+        "password": "Dr97IJwv#o0nw",
+        "database": "crt",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "uat": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "clientVariable": {
+      "WS": "ws://59.110.18.30:6180/edi-message-broker-client",
+      "exportMaxRows": 35000
+    },
+    "rop": {
+      "appKey": "0683B47E-D839-4D2E-BA9C-8415493A81B6",
+      "appSecret": "819C43A3-5BC6-4D5D-A33B-3F37297E6C07",
+      "host": "https://api.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing-internal",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "http://dl-rc-optd-cer-mysql-v-test-1.host.dataengine.com:8080"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "10.27.216.66",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crtsession",
+        "connectionLimit": 40
+      },
+      "read": {
+        "host": "10.27.216.66",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crtuat",
+        "connectionLimit": 40
+      },
+      "write": {
+        "host": "10.27.216.236",
+        "port": 6498,
+        "user": "rop",
+        "password": "Dr97IJwv#o0nw",
+        "database": "crtuat",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "production": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "domain": "edi.rongcapital.cn",
+    "clientVariable": {
+      "WS": "ws://101.201.77.131:6180/edi-message-broker-client",
+      "exportMaxRows": 35000,
+      "serviceHost": "http://service.edi.rongcapital.cn"
+    },
+    "rop": {
+      "appKey": "BD35FD84-3AE6-4960-B682-F719EE6D3018",
+      "appSecret": "43B09C23-C442-4622-928B-9643C01F9F41",
+      "host": "https://api.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing-internal",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "https://electronicsignature.open.ruixuesoft.com:8123"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "10.25.199.142",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edisession",
+        "connectionLimit": 40
+      },
+      "read":{
+        "host": "10.25.199.142",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      },
+      "write":{
+        "host": "10.47.152.13",
+        "port": 6498,
+        "user": "ediapi",
+        "password": "r6n1Y9APIc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "production-stlc": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "ipwhitelist":["120.27.232.77","118.31.218.76","124.93.197.186"],
+    "clientVariable": {
+      "WS": "ws://101.201.77.131:6180/edi-message-broker-client",
+      "exportMaxRows": 35000,
+      "serviceHost": "http://service.edi.rongcapital.cn"
+    },
+    "rop": {
+      "appKey": "BD35FD84-3AE6-4960-B682-F719EE6D3018",
+      "appSecret": "43B09C23-C442-4622-928B-9643C01F9F41",
+      "host": "https://api.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing-internal",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "https://electronicsignature.open.ruixuesoft.com:8123"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "10.25.199.142",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edisession",
+        "connectionLimit": 40
+      },
+      "read":{
+        "host": "10.25.199.142",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      },
+      "write":{
+        "host": "10.47.152.13",
+        "port": 6498,
+        "user": "ediapi",
+        "password": "r6n1Y9APIc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "staging": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "clientVariable": {
+      "WS": "ws://101.201.77.131:6180/edi-message-broker-client",
+      "exportMaxRows": 35000,
+      "serviceHost": "http://service.edi.rongcapital.cn"
+    },
+    "rop": {
+      "appKey": "4D51977E-431A-4E5D-9145-C1BD46A5FF0D",
+      "appSecret": "7C0D3274-DB5D-4392-B792-0CC3663D8CF6",
+      "host": "https://api.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 1200000
+      }
+    },
+    "certificate": {
+      "host": "https://electronicsignature.open.ruixuesoft.com:8123"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "10.210.10.25",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edisession",
+        "connectionLimit": 40
+      },
+      "read":{
+        "host": "10.210.10.25",
+        "port": 6498,
+        "user": "ediweb",
+        "password": "r6n1Y9WEBc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      },
+      "write":{
+        "host": "10.210.10.15",
+        "port": 6498,
+        "user": "ediapi",
+        "password": "r6n1Y9APIc44I@xx",
+        "database": "edi",
+        "connectionLimit": 40
+      }
+    }
+  },
+  "test": {
+    "safeTimeout": 3600000,
+    "beginSince": 1506268800000,
+    "exportLimit": 1000,
+    "exportMaxRows": 35000,
+    "clientVariable": {
+      "WS": "ws://beehive.roprouter.ruixuesoft.com:1199/edi-message-broker-client",
+      "exportMaxRows": 35000
+    },
+    "rop": {
+      "appKey": "86C1CCFA-E79F-4815-89F0-A788558AEAA6",
+      "appSecret": "EB797716-8783-4E5F-8E1F-E6F1862C2861",
+      "host": "https://testapi.open.ruixuesoft.com:30005/ropapi",
+      "requestHeader": {
+        "accept": "*",
+        "rejectUnauthorized": false,
+        "content-type": "application/json; charset=utf-8"
+      },
+      "queues": 5
+    },
+    "oss": {
+      "host": "http://rongcapitaledi.oss-cn-beijing.aliyuncs.com/",
+      "opt": {
+        "region": "oss-cn-beijing",
+        "accessKeyId": "1Mq5RScP2vBwHO6A",
+        "accessKeySecret": "0En7RBmiUtj84IBoC3lXFaMP9EpJIa",
+        "bucket": "rongcapitaledi",
+        "timeout": 120000
+      }
+    },
+    "certificate": {
+      "host": "http://dl-rc-optd-cer-mysql-v-test-1.host.dataengine.com:8080"
+    },
+    "mail":{
+      "smtp": {
+        "host":"smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true,
+        "user": "edi@rongcapital.cn",
+        "password": "Rong0823"
+      }
+    },
+    "db":{
+      "session":{
+        "host": "59.110.5.11",
+        "port": 6498,
+        "user": "reader",
+        "password": "97IJwv#o0",
+        "database": "crtsession",
+        "connectionLimit": 40
+      },
+      "read": {
+        "host": "59.110.17.154",
+        "port": 6498,
+        "user": "rop",
+        "password": "Dr97IJwv#o0nw",
+        "database": "crtnodetest",
+        "connectionLimit": 40
+      },
+      "write": {
+        "host": "59.110.17.154",
+        "port": 6498,
+        "user": "rop",
+        "password": "Dr97IJwv#o0nw",
+        "database": "crtnodetest",
+        "connectionLimit": 40
+      }
+    }
+  }
+}

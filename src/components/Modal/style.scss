@@ -1,0 +1,106 @@
+@import '../../styles/variables';
+
+.modal{
+  display:block !important;
+  overflow: auto !important;
+  :global(.modal-dialog){
+    z-index: 1051;
+    :global(.modal-content){
+      border-radius: 0;
+      background-color: $coolColor1;
+      position: relative;
+      :global(.modal-header){
+        background-color: white;
+      }
+      /*:global(.modal-footer){
+        background-color: white;
+        button{
+          margin-left:1rem;
+        }
+        :global(.text-danger){
+          margin:0;
+          line-height:34px;
+        }
+      }*/
+      :global{
+        .modal-header{
+          background-color: white;
+        }
+        .modal-footer{
+          background-color: white;
+          button{
+            margin-left:1rem;
+          }
+          .text-danger,.text-info, .text-warning, .text-success{
+            margin:0;
+            line-height:34px;
+          }
+        }
+
+        .progress{
+          position: absolute;
+          top:0;
+          left:0;
+          margin-bottom:0;
+          width: 100%;
+          background:none;
+          box-shadow:none;
+          height: .25rem !important;
+          .progress-bar{
+            //background:none;
+            box-shadow:none;
+          }
+        }
+      }
+      .block{
+        padding: 1rem;
+        background-color: white;
+        position: relative;
+        &:not(:last-child){
+          margin-bottom: 1rem;
+        }
+        box-shadow: $shadow1;
+        :global(.control-label){
+          line-height: 22px;
+          &:global(.asterisk){
+            position: relative;
+            &:after{
+              content:"*";
+              font-weight: bold;
+              color: red;
+              position:absolute;
+              right: 7px;
+            }
+          }
+        }
+
+        :global(.form-group){
+          input::placeholder{
+            color: $headerText;
+          }
+          .form-text{
+            padding-top: 7px;
+            line-height: 22px;
+          }
+          :global(.help-block){
+            margin: 8px 0 0;
+          }
+          :global(.pull-left){
+            margin-right: 1rem;
+          }
+        }
+        :global(.form-control-static){
+         line-height: 22px;
+        }
+      }
+
+      .modal-table-wrapper{
+        min-height:32rem;
+        padding:0;
+        margin: 1rem;
+        //box-shadow: $shadow1;
+        background-color: white;
+      }
+    }
+  }
+}

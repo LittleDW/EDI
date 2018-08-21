@@ -1,0 +1,9 @@
+.wrapper__no-filter__tab-area__with-tips {
+  composes: wrapper__tab-area from '../../styles/modules.scss';
+  height: 33rem;
+}
+
+.wrapper__tab-area__with-tips {
+  composes: wrapper__tab-area from '../../styles/modules.scss';
+  height: 24rem;
+}

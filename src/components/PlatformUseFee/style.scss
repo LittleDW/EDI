@@ -1,0 +1,13 @@
+.summa {
+  position: absolute;
+  display: inline-block;
+  bottom: 1rem;
+  left: 2rem;
+  span {
+    color: #1ab394;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape), (max-width: 768px) and (orientation: portrait){
+    display: none;
+  }
+}

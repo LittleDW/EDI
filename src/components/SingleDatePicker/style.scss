@@ -1,0 +1,80 @@
+.DatePicker {
+  display: inline-block;
+  :global{
+    .SingleDatePicker{
+      margin:0 !important;
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+      .SingleDatePickerInput {
+        border: 1px solid #e5e6e7;
+        position: relative;
+        .DateInput{
+          width: 120px;
+          height: 32px;
+          //padding: 4px 8px;
+          padding: 6px 12px;
+          .DateInput__input{
+            width: 120px;
+          }
+          .DateInput__display-text{
+            font-size: 13px;
+            font-weight: 400;
+            padding: 0;
+            text-align: left;
+            background: none !important;
+            line-height: 20px;
+            color: #333;
+          }
+
+          &.DateInput--with-caret{
+            &::before{
+              top: 40px;
+            }
+            &::after{
+              top: 41px;
+            }
+          }
+        }
+        .SingleDatePickerInput__clear-date{
+          margin-left: 0px;
+          margin-right: 0px;
+          padding: 0px;
+          outline: 0;
+          background-color: transparent ;
+          border-radius: 0 ;
+          line-height: 12px;
+          svg{
+            width: 10px;
+            height: 10px;
+          }
+        }
+        .SingleDatePickerInput__calendar-icon{
+          position: absolute;
+          top: 7px;
+          right: 9px;
+          margin:0;
+          padding:0;
+          outline:none;
+          svg{
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+      .DateRangePicker__picker--open-down{
+        top: 52px;
+      }
+      .SingleDatePickerInput__clear-date{
+        padding: 8px 10px 9px 10px;
+      }
+      .SingleDatePicker__picker{
+        transform: scale(0.8);
+        transform-origin: 0px -102px;
+      }
+    }
+  }
+}

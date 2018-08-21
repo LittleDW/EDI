@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+
+.cooperator-info{
+  margin: 1rem 1rem 0 1rem;
+}
+
+.cooperator-info-table-wrapper{
+  height:32rem;
+  padding:1.5rem 1rem;
+  box-shadow: $shadow1;
+  background-color: white;
+  border: 1px solid $borderColor;
+}
+
+.cooperator-info-ops{
+  position: relative;
+  .hidden-ops{
+    display: none;
+    position: absolute;
+    top: -9px;
+    left: calc(-1rem);
+    padding: .5rem 1rem;
+    background: white;
+    border: $borderColor 1px solid;
+    box-shadow: $shadow3;
+    transform: translateX(-100%);
+  }
+}
+
+.modal{
+  display:block !important;
+  overflow: auto !important;
+  :global(.modal-dialog){
+    z-index: 1051;
+    :global(.modal-content){
+      border-radius: 0;
+      background-color: $coolColor1;
+
+      :global(.modal-header){
+        background-color: white;
+      }
+      :global(.modal-footer){
+        background-color: white;
+        button{
+          margin-left:1rem;
+        }
+        :global(.text-danger){
+          margin:0;
+          line-height:34px;
+          display:inline-block;
+        }
+      }
+      .block{
+        padding: 1rem;
+        background-color: white;
+        &:not(:last-child){
+          margin-bottom: 1rem;
+        }
+        box-shadow: $shadow1;
+        :global(.form-group){
+          .form-text{
+            padding-top: 7px;
+          }
+          :global(.control-label){
+            line-height: 22px;
+            &:global(.asterisk){
+              position: relative;
+              &:after{
+                content:"*";
+                font-weight: bold;
+                color: red;
+                position:absolute;
+                right: 7px;
+              }
+            }
+          }
+        }
+      }
+      .modal-table-wrapper{
+        min-height:32rem;
+        padding:0;
+        margin: 1rem;
+        //box-shadow: $shadow1;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.relation-block{
+  height: calc(100vh - 60px - 56px - 65px - 2px - 32px);
+  overflow: auto;
+}
+
+.scroller{
+  overflow:auto
+}
+

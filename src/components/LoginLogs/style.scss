@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.login-logs{
+  margin: 1rem 1rem 0 1rem;
+}
+.login-logs-table-infos{
+  font-weight: 400;
+  text-align: left;
+  white-space: nowrap;
+  padding: 1rem;
+  margin-bottom: 1rem ;
+  box-shadow: $shadow1;
+  background: white;
+  border: 1px solid $borderColor;
+  .info-row{
+    width: 1194px;
+    /*&>*{
+      &:not(:first-child){
+        margin-left: 16px;
+      }
+    }*/
+  }
+
+  :global(.form-group){
+    label{
+      white-space: nowrap;
+      //margin-left: 1rem;
+      margin-bottom: 0;
+      line-height: 34px;
+    }
+    input[type=date]{
+      //max-width: 10rem;
+    }
+    input,select{
+      //margin-left: .5em;
+      display: inline-block;
+      //width: auto;
+      //max-width: 7rem;
+    }
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+  :global(.icon-btn){
+    margin-right: 1rem;
+    &:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+.login-logs-table-wrapper{
+  height:31rem;
+  padding:1rem;
+  box-shadow: $shadow1;
+  background: white;
+  border: 1px solid $borderColor;
+  //margin: 0 1rem;
+}

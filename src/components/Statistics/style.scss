@@ -1,0 +1,82 @@
+.datatable-colspan {
+  composes: datatable from '../Datatable/style.scss';
+  tr {
+    th {
+      text-align: center;
+      &:first-child {
+        text-align: left;
+        width: 200px;
+        max-width: 200px;
+        overflow: hidden;
+      }
+      &:last-child {
+        width: 100px;
+      }
+      span {
+        display: inline-block;
+        width: 85px;
+      }
+    }
+    td {
+      text-align: right;
+      &:first-child {
+        text-align: left;
+        width: 200px;
+        max-width: 200px;
+        overflow: hidden;
+      }
+      &:last-child {
+        width: 100px;
+      }
+      span {
+        display: inline-block;
+        width: 45px;
+      }
+    }
+  }
+}
+
+.datatable {
+  composes: datatable from '../Datatable/style.scss';
+  td,
+  th {
+    width: 12%;
+    overflow: hidden;
+    &:first-child {
+      width: 150px;
+      max-width: 150px;
+      overflow: hidden;
+    }
+  }
+}
+
+.datatable-10 {
+  composes: datatable from '../Datatable/style.scss';
+  td,
+  th {
+    width: 9%;
+    overflow: hidden;
+    &:first-child {
+      width: 150px;
+      max-width: 150px;
+      overflow: hidden;
+    }
+  }
+}
+
+.wrapper__tab-area__tab2 {
+  position: relative;
+  height: 19.5rem;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.wrapper__content-tips-red {
+  composes: wrapper__content-tips from '../../styles/modules.scss';
+  color: red;
+}
+
+.platform-wrapper {
+  composes: wrapper__tab-area from '../../styles/modules.scss';
+  height: 32rem;
+}

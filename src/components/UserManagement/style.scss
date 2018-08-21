@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.user-management{
+  margin: 1rem 1rem 0 1rem;
+}
+
+.user-management-table-infos{
+  font-weight: 400;
+  text-align: left;
+  white-space: nowrap;
+  padding: 1rem;
+  box-shadow: $shadow1;
+  border: 1px solid $borderColor;
+  margin: 1rem 0 ;
+  background: white;
+  .info-row{
+    width: 1194px;
+  }
+
+  :global(.form-group){
+    margin-bottom: 0;
+    label{
+      white-space: nowrap;
+      //margin-left: 1rem;
+      margin-bottom: 0;
+      line-height: 34px;
+    }
+  }
+  :global(.icon-btn){
+    margin-right: 1rem;
+    &:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+.user-management-table-wrapper{
+  height:32rem;
+  padding:1.5rem 1rem;
+  box-shadow: $shadow1;
+  background-color: white;
+  border: 1px solid $borderColor;
+}
+
+.user-management-ops{
+  position: relative;
+  .hidden-ops{
+    display: none;
+    position: absolute;
+    top: -9px;
+    left: calc(-1rem);
+    padding: .5rem 1rem;
+    background: white;
+    border: $borderColor 1px solid;
+    box-shadow: $shadow3;
+    transform: translateX(-100%);
+  }
+}
+

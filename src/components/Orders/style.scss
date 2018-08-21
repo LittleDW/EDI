@@ -1,0 +1,32 @@
+.summa {
+  position: absolute;
+  display: inline-block;
+  bottom: 1rem;
+  left: 2rem;
+  span:first-child {
+    color: #1ab394;
+  }
+  span:last-child {
+    color: red;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape), (max-width: 768px) and (orientation: portrait){
+    display: none;
+  }
+}
+
+
+.finance-block{
+  height: calc(100vh - 60px - 56px - 65px - 2px - 32px);
+  overflow: auto;
+
+  :global{
+    .SingleDatePicker{
+      width: 172px;
+    }
+  }
+}
+
+.scroller{
+  overflow:auto
+}

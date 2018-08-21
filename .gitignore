@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+/yarn-error.log
+/gulpfile.js
+/npm-debug.log
+build
+build_temp
+nohup.out
+logs
+node_modules
+mock
+sample/*
+/temp
+.idea
+.env
+yarn.lock
+package-lock.json
+.vscode

@@ -1,0 +1,32 @@
+
+#请在  ~/.ssh/config  中加入以下代码
+
+Host jumpserver
+    HostName jumper.dataengine.com
+    ForwardAgent yes
+    Port 1024
+    User shiqifeng
+    IdentityFile /Users/robin/.ssh/id_rsa
+Host edidev
+    HostName 10.205.16.44
+    User shiqifeng
+    ProxyCommand ssh jumpserver -W  %h:%p
+Host jrdrepayment
+    HostName 10.205.16.209
+    User shiqifeng
+    ProxyCommand ssh jumpserver -W  %h:%p
+Host ediuat
+    HostName 59.110.18.30
+    User root
+    ProxyCommand ssh edidev -W  %h:%p
+Host edipro
+    HostName 101.201.77.131
+    User root
+    ProxyCommand ssh edidev -W  %h:%p
+
+
+#ssh edipro -L 2000:localhost:22 -N
+
+#ssh -L 3333:gitlab.dataengine.com:22 root@localhost:2000
+#git@gitlab.dataengine.com:shiqifeng/node-mysql.git
+#git clone ssh://git@localhost:3333:shiqifeng/node-mysql.git

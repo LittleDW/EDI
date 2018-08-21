@@ -1,0 +1,32 @@
+.exporter{
+  position: absolute;
+  top: 44px;
+  right: 1rem;
+}
+
+.btn-row{
+  button{
+    margin-right: 1rem;
+    &.uploading{
+    }
+  }
+}
+
+.label-value{
+  padding-top: 7px;
+  line-height:22px;
+  display: inline-block;
+  font-weight:bold;
+}
+
+.legend-value{
+  line-height:26px;
+  font-size: .8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.attachment-list{
+  max-height:196px;
+  overflow: auto;
+}

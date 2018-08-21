@@ -1,0 +1,22 @@
+.tree__modal-body {
+  max-height: 500px;
+  overflow: auto;
+}
+
+:global {
+  .react-checkbox-tree {
+    font-size: .8rem;
+    min-height: 30rem;
+  }
+  .react-checkbox-tree label:hover {
+    background: rgba(0, 179, 149, 0.1);
+  }
+
+  .react-checkbox-tree label:active {
+    background: rgba(0, 179, 149, 0.1);
+  }
+  .rct-node-icon {
+    color: #00b395;
+  }
+
+}

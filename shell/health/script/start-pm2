@@ -1,0 +1,5 @@
+nohup pm2 start /data/node-mysql/ecosystem.config.js --env production >/dev/null 2>&1 &
+echo $! > /data/health_check/script/pm2.pid
+echo "pm2 started!"
+exit 0
+

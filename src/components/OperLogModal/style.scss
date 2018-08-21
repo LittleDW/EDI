@@ -1,0 +1,134 @@
+.operLogModal{
+  max-height:500px;
+  overflow: auto;
+  :global(.react-checkbox-tree){
+    font-size: .8rem;
+    min-height: 30rem;
+  }
+}
+
+.timeline-centered {
+  position: relative;
+  margin-bottom: 30px;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: #000000;
+    left: 40%;
+    top: 20px;
+    bottom: 20px;
+    margin-left: -4px;
+  }
+}
+
+.timeline-label {
+  position: relative;
+  background: #f5f5f6;
+  padding: 1.7em;
+  margin-left: 70px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #f5f5f6 transparent transparent;
+    left: 0;
+    top: 10px;
+    margin-left: -9px;
+  }
+}
+
+.timeline-icon {
+  background: #fff;
+  color: #737881;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  -moz-box-shadow: 0 0 0 5px #000000;
+  -webkit-box-shadow: 0 0 0 5px #000000;
+  box-shadow: 0 0 0 5px #000000;
+  line-height: 40px;
+  font-size: 15px;
+  float: left;
+}
+
+.timeline-time {
+  position: absolute;
+  left: -150px;
+  text-align: right;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  span {
+    display: block;
+    &:first-child {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    &:last-child {
+      font-size: 12px;
+    }
+  }
+}
+
+.timeline-entry-inner {
+  position: relative;
+  margin-left: -22px;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+
+  .bg-success {
+    background-color: #00a651;
+    color: #fff;
+  }
+}
+
+.timeline-entry {
+  position: relative;
+  width: 60%;
+  float: right;
+  margin-bottom: 70px;
+  clear: both;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.end {
+  margin-bottom: 0;
+}

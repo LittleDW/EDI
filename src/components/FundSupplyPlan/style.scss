@@ -1,0 +1,17 @@
+.wrapper__tab-area__content {
+  position: relative;
+  height: 21.8rem;
+  overflow: auto;
+  clear: both;
+  padding-top: 1rem;
+}
+
+.wrapper__left-area {
+  composes: wrapper__left-area from '../RequirementPlan/style.scss';
+  height: 98%;
+}
+
+.wrapper__right-area {
+  composes: wrapper__right-area from '../RequirementPlan/style.scss';
+  height: 95%;
+}

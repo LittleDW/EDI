@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.profile-container {
+  background-color: white;
+  margin: 1rem !important;
+  padding-top: 10px;
+  box-shadow: $shadow1;
+  border: 1px solid $borderColor;
+  /*:global(.control-label) {
+    line-height: 22px;
+    &:global(.asterisk) {
+      &:after {
+        content: "*";
+        font-weight: bold;
+        color: red;
+        margin-left: .2rem;
+      }
+    }
+  }*/
+  :global {
+    .btn{
+      margin-right: 1rem;
+    }
+    .control-label {
+      line-height: 22px;
+      .asterisk {
+        &:after {
+          content: "*";
+          font-weight: bold;
+          color: red;
+          margin-left: .2rem;
+        }
+      }
+    }
+  }
+}
